@@ -20,8 +20,8 @@ const PROFILE_DATA = {
     previousOrg: "Bandhan-Konnagar",
     currentTitle: "Senior CSR Leader & Social Development Consultant",
     location: "Kolkata, West Bengal, India (PAN-India Availability)",
-    email: "ps99123@gmail.com",
-    phone: "+91 97321 00336",
+    email: "prasenjit.singhaniya@gmail.com",
+    phone: "+91 79807 41727",
     linkedin: "https://www.linkedin.com/in/prasenjit-singha-864a6354",
     cvDownloadPath: "assets/docs/Prasenjit_Singha_CV.pdf",
     summary: "Senior development-sector executive and strategic CSR consultant with 15+ years of distinguished leadership across 11 Indian states. Extensive proven track record at Bandhan-Konnagar directing multi-crore CSR initiatives for premier BFSI and corporate donors (Bandhan Bank, HDFC Life, Yes Bank, Kotak Mahindra Bank, Bajaj Finserv, World Bank). Deep expertise spanning Public Health & Mobile Medical Units (1.2M+ consultations), Maternal & Child Health, CHILDLINE 1098 child protection, WASH infrastructure (1.5L+ assets), Farmer Producer Organisations, and Social Impact Assessments (SIA). Expert in institutional convergence, MCA Schedule VII compliance, Theory of Change, and assignment-specific research management."

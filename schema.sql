@@ -338,29 +338,29 @@ CREATE POLICY "Public can view active documents metadata"
 -- 3. Administrator Full Access Policies (Role-Based)
 -- Note: Replace 'admin' with your Supabase custom claims or service role
 CREATE POLICY "Admin full access on professional_enquiries" 
-    ON public.professional_enquiries FOR ALL TO authenticated USING (auth.jwt() ->> 'role' = 'service_role' OR auth.jwt() ->> 'email' = 'ps99123@gmail.com');
+    ON public.professional_enquiries FOR ALL TO authenticated USING (auth.jwt() ->> 'role' = 'service_role' OR auth.jwt() ->> 'email' = 'prasenjit.singhaniya@gmail.com');
 
 CREATE POLICY "Admin full access on recruiter_enquiries" 
-    ON public.recruiter_enquiries FOR ALL TO authenticated USING (auth.jwt() ->> 'role' = 'service_role' OR auth.jwt() ->> 'email' = 'ps99123@gmail.com');
+    ON public.recruiter_enquiries FOR ALL TO authenticated USING (auth.jwt() ->> 'role' = 'service_role' OR auth.jwt() ->> 'email' = 'prasenjit.singhaniya@gmail.com');
 
 CREATE POLICY "Admin full access on consultancy_assignments" 
-    ON public.consultancy_assignments FOR ALL TO authenticated USING (auth.jwt() ->> 'role' = 'service_role' OR auth.jwt() ->> 'email' = 'ps99123@gmail.com');
+    ON public.consultancy_assignments FOR ALL TO authenticated USING (auth.jwt() ->> 'role' = 'service_role' OR auth.jwt() ->> 'email' = 'prasenjit.singhaniya@gmail.com');
 
 CREATE POLICY "Admin full access on funding_partnerships" 
-    ON public.funding_partnerships FOR ALL TO authenticated USING (auth.jwt() ->> 'role' = 'service_role' OR auth.jwt() ->> 'email' = 'ps99123@gmail.com');
+    ON public.funding_partnerships FOR ALL TO authenticated USING (auth.jwt() ->> 'role' = 'service_role' OR auth.jwt() ->> 'email' = 'prasenjit.singhaniya@gmail.com');
 
 CREATE POLICY "Admin full access on impact_assessment_requests" 
-    ON public.impact_assessment_requests FOR ALL TO authenticated USING (auth.jwt() ->> 'role' = 'service_role' OR auth.jwt() ->> 'email' = 'ps99123@gmail.com');
+    ON public.impact_assessment_requests FOR ALL TO authenticated USING (auth.jwt() ->> 'role' = 'service_role' OR auth.jwt() ->> 'email' = 'prasenjit.singhaniya@gmail.com');
 
 CREATE POLICY "Admin full access on technical_writing_requests" 
-    ON public.technical_writing_requests FOR ALL TO authenticated USING (auth.jwt() ->> 'role' = 'service_role' OR auth.jwt() ->> 'email' = 'ps99123@gmail.com');
+    ON public.technical_writing_requests FOR ALL TO authenticated USING (auth.jwt() ->> 'role' = 'service_role' OR auth.jwt() ->> 'email' = 'prasenjit.singhaniya@gmail.com');
 
 CREATE POLICY "Admin full access on knowledge_articles" 
-    ON public.knowledge_articles FOR ALL TO authenticated USING (auth.jwt() ->> 'role' = 'service_role' OR auth.jwt() ->> 'email' = 'ps99123@gmail.com');
+    ON public.knowledge_articles FOR ALL TO authenticated USING (auth.jwt() ->> 'role' = 'service_role' OR auth.jwt() ->> 'email' = 'prasenjit.singhaniya@gmail.com');
 
 CREATE POLICY "Admin full access on project_portfolio" 
-    ON public.project_portfolio FOR ALL TO authenticated USING (auth.jwt() ->> 'role' = 'service_role' OR auth.jwt() ->> 'email' = 'ps99123@gmail.com');
+    ON public.project_portfolio FOR ALL TO authenticated USING (auth.jwt() ->> 'role' = 'service_role' OR auth.jwt() ->> 'email' = 'prasenjit.singhaniya@gmail.com');
 
 CREATE POLICY "Admin full access on professional_documents" 
-    ON public.professional_documents FOR ALL TO authenticated USING (auth.jwt() ->> 'role' = 'service_role' OR auth.jwt() ->> 'email' = 'ps99123@gmail.com');
+    ON public.professional_documents FOR ALL TO authenticated USING (auth.jwt() ->> 'role' = 'service_role' OR auth.jwt() ->> 'email' = 'prasenjit.singhaniya@gmail.com');
 

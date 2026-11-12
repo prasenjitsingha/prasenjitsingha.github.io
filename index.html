@@ -32,7 +32,8 @@
     content="15+ Years Leadership in CSR, Public Health, Child Protection & Social Impact Assessment.">
 
   <!-- Favicon & Fonts -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23851433'/%3E%3Ctext x='50%25' y='68%25' font-family='sans-serif' font-size='50' font-weight='800' fill='white' text-anchor='middle'%3EPS%3C/text%3E%3C/svg%3E">
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23851433'/%3E%3Ctext x='50%25' y='68%25' font-family='sans-serif' font-size='50' font-weight='800' fill='white' text-anchor='middle'%3EPS%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -122,32 +123,54 @@
   <!-- ========================================================================
        TOP UTILITY BAR
        ======================================================================== -->
-  <div class="top-utility-bar">
+  <div class="top-utility-bar" id="topUtilityBar">
     <div class="container utility-bar-inner">
+      <!-- Left: Direct Coordinates -->
       <div class="utility-left">
-        <span class="utility-item">
-          <i class="fa-solid fa-location-dot"></i> Salt Lake Sector-V, Kolkata 700091 · PAN-India (11 States)
+        <span class="utility-item utility-loc-item"
+          title="Primary Office: Salt Lake Sector-V, Kolkata 700091 · Field Footprint Across 11 States">
+          <i class="fa-solid fa-location-dot utility-icon-teal"></i>
+          <span class="loc-full">Salt Lake, Kolkata &middot; PAN-India (11 States)</span>
+          <span class="loc-compact">Kolkata &middot; PAN-India</span>
         </span>
-        <span class="utility-item">
-          <i class="fa-solid fa-envelope"></i> prasenjit.singhaniya@gmail.com
-        </span>
-        <span class="utility-item">
-          <i class="fa-solid fa-phone"></i> +91 79807 41727
-        </span>
+        <span class="utility-sep" aria-hidden="true"></span>
+        <a href="mailto:prasenjit.singhaniya@gmail.com" class="utility-item utility-link"
+          title="Send Direct Email (prasenjit.singhaniya@gmail.com)">
+          <i class="fa-solid fa-envelope utility-icon-sky"></i>
+          <span>prasenjit.singhaniya@gmail.com</span>
+        </a>
+        <span class="utility-sep" aria-hidden="true"></span>
+        <a href="tel:+917980741727" class="utility-item utility-link" title="Direct Telephone (+91 79807 41727)">
+          <i class="fa-solid fa-phone utility-icon-emerald"></i>
+          <span>+91 79807 41727</span>
+        </a>
       </div>
+
+      <!-- Right: Executive Shortcuts & Badges -->
       <div class="utility-right">
         <a href="https://www.linkedin.com/in/prasenjit-singha-864a6354" target="_blank" rel="noopener"
-          class="utility-link">
-          <i class="fa-brands fa-linkedin"></i> LinkedIn
+          class="utility-link" title="Connect on Official LinkedIn Profile">
+          <i class="fa-brands fa-linkedin utility-icon-linkedin"></i>
+          <span>LinkedIn</span>
         </a>
-        <a href="#analytics" class="utility-link" title="Executive Governance & Performance Dashboard (₹100 Cr+)">
-          <i class="fa-solid fa-chart-column"></i> Dashboard (₹100Cr+)
+        <span class="utility-sep" aria-hidden="true"></span>
+        <a href="#analytics" class="utility-link utility-badge-link"
+          title="Executive Governance & Performance Dashboard (₹100 Cr+ Portfolio)">
+          <i class="fa-solid fa-chart-column utility-icon-gold"></i>
+          <span>Dashboard</span>
+          <span class="utility-micro-badge">₹100 Cr+</span>
         </a>
-        <a href="assets/docs/Prasenjit_Singha_CV.pdf" download class="utility-link">
-          <i class="fa-solid fa-file-pdf"></i> Verified CV
+        <span class="utility-sep" aria-hidden="true"></span>
+        <a href="assets/docs/Prasenjit_Singha_CV.pdf" download class="utility-link"
+          title="Download Verified Executive Profile & CV (PDF)">
+          <i class="fa-solid fa-file-pdf utility-icon-rose"></i>
+          <span>Verified CV</span>
         </a>
-        <a href="#" id="adminPortalTrigger" class="utility-link" title="Secure Admin Dashboard (Ctrl+Alt+A)">
-          <i class="fa-solid fa-lock"></i> Admin Portal
+        <span class="utility-sep" aria-hidden="true"></span>
+        <a href="#" id="adminPortalTrigger" class="utility-link utility-admin-link"
+          title="Secure Admin Dashboard (Ctrl+Alt+A)">
+          <i class="fa-solid fa-lock utility-icon-purple"></i>
+          <span>Admin Portal</span>
         </a>
       </div>
     </div>
@@ -244,7 +267,8 @@
 
         <!-- Service-Oriented CTA Action Buttons -->
         <div class="hero-cta-group">
-          <a href="#analytics" class="btn btn-gold btn-lg" title="Executive Governance & Performance Dashboard (₹100 Cr+)">
+          <a href="#analytics" class="btn btn-gold btn-lg"
+            title="Executive Governance & Performance Dashboard (₹100 Cr+)">
             <i class="fa-solid fa-chart-column"></i> Dashboard (₹100 Cr+)
           </a>
           <a href="#service-matrix" class="btn btn-primary btn-lg">
@@ -510,7 +534,8 @@
         <span class="section-tag"><i class="fa-solid fa-chart-line"></i> Strategic Impact & Portfolio Performance</span>
         <h2 class="section-title">Dashboard</h2>
         <p class="section-subtitle">
-          Audited empirical metrics tracking ₹100 Cr+ cumulative CSR budget utilization, ₹20 Cr+ resource mobilization, institutional impact assessments, and multi-state governance reach.
+          Audited empirical metrics tracking ₹100 Cr+ cumulative CSR budget utilization, ₹20 Cr+ resource mobilization,
+          institutional impact assessments, and multi-state governance reach.
         </p>
       </div>
 
@@ -527,7 +552,8 @@
               </span>
               <div class="powerbi-title-text">
                 <span class="pb-report-name">EXECUTIVE GOVERNANCE & IMPACT PORTFOLIO</span>
-                <span class="pb-report-meta"><i class="fa-solid fa-circle-check" style="color: #10b981;"></i> Statutory MCA Schedule VII Filings · Audit Reconciled · 2011–2026</span>
+                <span class="pb-report-meta"><i class="fa-solid fa-circle-check" style="color: #10b981;"></i> Statutory
+                  MCA Schedule VII Filings · Audit Reconciled · 2011–2026</span>
               </div>
             </div>
           </div>
@@ -560,9 +586,11 @@
             </div>
           </div>
           <div class="pb-view-tabs" id="pbViewTabs">
-            <button class="pb-view-tab active" data-view="kpi"><i class="fa-solid fa-table-cells-large"></i> KPI Cards</button>
+            <button class="pb-view-tab active" data-view="kpi"><i class="fa-solid fa-table-cells-large"></i> KPI
+              Cards</button>
             <button class="pb-view-tab" data-view="charts"><i class="fa-solid fa-chart-pie"></i> Visual Charts</button>
-            <button class="pb-view-tab" data-view="matrix"><i class="fa-solid fa-landmark"></i> Governance Matrix</button>
+            <button class="pb-view-tab" data-view="matrix"><i class="fa-solid fa-landmark"></i> Governance
+              Matrix</button>
           </div>
         </div>
 
@@ -578,7 +606,8 @@
               </div>
               <div class="pb-card-metric" data-target="100">₹100 Cr+</div>
               <div class="pb-card-title">Budget Utilization Oversight</div>
-              <p class="pb-card-desc">Multi-crore CSR & development budget execution across 11 Indian states with 100% audited utilization.</p>
+              <p class="pb-card-desc">Multi-crore CSR & development budget execution across 11 Indian states with 100%
+                audited utilization.</p>
               <div class="pb-card-footer">
                 <span class="pb-card-trend"><i class="fa-solid fa-arrow-trend-up"></i> 100% Audit Track Record</span>
               </div>
@@ -592,7 +621,8 @@
               </div>
               <div class="pb-card-metric" data-target="20">₹20 Cr+</div>
               <div class="pb-card-title">Budget Mobilization & Alliances</div>
-              <p class="pb-card-desc">Corporate foundation identification, donor mapping, and institutional funding facilitated for high-impact causes.</p>
+              <p class="pb-card-desc">Corporate foundation identification, donor mapping, and institutional funding
+                facilitated for high-impact causes.</p>
               <div class="pb-card-footer">
                 <span class="pb-card-trend"><i class="fa-solid fa-check-double"></i> 100% Fund Deployment</span>
               </div>
@@ -606,7 +636,8 @@
               </div>
               <div class="pb-card-metric" data-target="20">₹20 Cr+</div>
               <div class="pb-card-title">Agency Impact Assessments</div>
-              <p class="pb-card-desc">Mandatory CSR impact assessments, baseline/midline/endlines, and third-party evaluations completed successfully.</p>
+              <p class="pb-card-desc">Mandatory CSR impact assessments, baseline/midline/endlines, and third-party
+                evaluations completed successfully.</p>
               <div class="pb-card-footer">
                 <span class="pb-card-trend"><i class="fa-solid fa-chart-pie"></i> SROI Econometric Validation</span>
               </div>
@@ -620,7 +651,8 @@
               </div>
               <div class="pb-card-metric" data-target="15">15+</div>
               <div class="pb-card-title">High-Impact Project DPRs</div>
-              <p class="pb-card-desc">Investor-grade Detailed Project Reports (DPRs), Theory of Change (ToC), and Logical Frameworks (LFA) drafted.</p>
+              <p class="pb-card-desc">Investor-grade Detailed Project Reports (DPRs), Theory of Change (ToC), and
+                Logical Frameworks (LFA) drafted.</p>
               <div class="pb-card-footer">
                 <span class="pb-card-trend"><i class="fa-solid fa-certificate"></i> 100% Donor Approval Track</span>
               </div>
@@ -634,7 +666,8 @@
               </div>
               <div class="pb-card-metric">FPO + 5 Orgs</div>
               <div class="pb-card-title">Renowned FPO Advisor & Volunteering</div>
-              <p class="pb-card-desc">Strategic Board Advisor to renowned Farmer Producer Organisation; actively volunteering in 5 social development bodies.</p>
+              <p class="pb-card-desc">Strategic Board Advisor to renowned Farmer Producer Organisation; actively
+                volunteering in 5 social development bodies.</p>
               <div class="pb-card-footer">
                 <span class="pb-card-trend"><i class="fa-solid fa-users"></i> Grassroots Institutional Building</span>
               </div>
@@ -648,7 +681,8 @@
               </div>
               <div class="pb-card-metric" data-target="5">5+</div>
               <div class="pb-card-title">Govt Projects Coordinations</div>
-              <p class="pb-card-desc">Multi-stakeholder convergence across ADMIP (World Bank/WB), NHM Health Fleets, Swachh Bharat / JJM, and WCD 1098.</p>
+              <p class="pb-card-desc">Multi-stakeholder convergence across ADMIP (World Bank/WB), NHM Health Fleets,
+                Swachh Bharat / JJM, and WCD 1098.</p>
               <div class="pb-card-footer">
                 <span class="pb-card-trend"><i class="fa-solid fa-earth-asia"></i> 11 Indian States Reach</span>
               </div>
@@ -662,7 +696,8 @@
               </div>
               <div class="pb-card-metric" data-target="500">500+</div>
               <div class="pb-card-title">Corporate & Foundation Networks</div>
-              <p class="pb-card-desc">Direct executive relationships with Corporate CSR Heads, ESG Directors, Trustees, and BFSI Decision-Makers.</p>
+              <p class="pb-card-desc">Direct executive relationships with Corporate CSR Heads, ESG Directors, Trustees,
+                and BFSI Decision-Makers.</p>
               <div class="pb-card-footer">
                 <span class="pb-card-trend"><i class="fa-solid fa-briefcase"></i> Direct Institutional Access</span>
               </div>
@@ -676,7 +711,8 @@
               </div>
               <div class="pb-card-metric" data-target="7500">7.5k+</div>
               <div class="pb-card-title">LinkedIn Professional Followers</div>
-              <p class="pb-card-desc">Verified high-engagement community of development leaders, researchers, CSR specialists, and sector recruiters.</p>
+              <p class="pb-card-desc">Verified high-engagement community of development leaders, researchers, CSR
+                specialists, and sector recruiters.</p>
               <div class="pb-card-footer">
                 <span class="pb-card-trend"><i class="fa-solid fa-bullhorn"></i> Top CSR & Public Health Voice</span>
               </div>
@@ -702,11 +738,16 @@
                       <div class="pb-donut-graphic">
                         <svg viewBox="0 0 160 160" class="pb-donut-svg">
                           <circle cx="80" cy="80" r="60" class="donut-bg"></circle>
-                          <circle cx="80" cy="80" r="60" class="donut-seg seg-health" stroke-dasharray="143 234" stroke-dashoffset="0"></circle>
-                          <circle cx="80" cy="80" r="60" class="donut-seg seg-rural" stroke-dasharray="98 279" stroke-dashoffset="-143"></circle>
-                          <circle cx="80" cy="80" r="60" class="donut-seg seg-wash" stroke-dasharray="68 309" stroke-dashoffset="-241"></circle>
-                          <circle cx="80" cy="80" r="60" class="donut-seg seg-child" stroke-dasharray="38 339" stroke-dashoffset="-309"></circle>
-                          <circle cx="80" cy="80" r="60" class="donut-seg seg-sia" stroke-dasharray="30 347" stroke-dashoffset="-347"></circle>
+                          <circle cx="80" cy="80" r="60" class="donut-seg seg-health" stroke-dasharray="143 234"
+                            stroke-dashoffset="0"></circle>
+                          <circle cx="80" cy="80" r="60" class="donut-seg seg-rural" stroke-dasharray="98 279"
+                            stroke-dashoffset="-143"></circle>
+                          <circle cx="80" cy="80" r="60" class="donut-seg seg-wash" stroke-dasharray="68 309"
+                            stroke-dashoffset="-241"></circle>
+                          <circle cx="80" cy="80" r="60" class="donut-seg seg-child" stroke-dasharray="38 339"
+                            stroke-dashoffset="-309"></circle>
+                          <circle cx="80" cy="80" r="60" class="donut-seg seg-sia" stroke-dasharray="30 347"
+                            stroke-dashoffset="-347"></circle>
                         </svg>
                         <div class="pb-donut-center">
                           <span class="center-val">₹100 Cr+</span>
@@ -719,35 +760,48 @@
                         <span class="legend-color-dot" style="background: #0d9488;"></span>
                         <div class="legend-text">
                           <div class="legend-top"><strong>Public Health & MMUs</strong> <span>₹38 Cr (38%)</span></div>
-                          <div class="pb-progress-bar"><div class="pb-progress-fill" style="width: 38%; background: #0d9488;"></div></div>
+                          <div class="pb-progress-bar">
+                            <div class="pb-progress-fill" style="width: 38%; background: #0d9488;"></div>
+                          </div>
                         </div>
                       </div>
                       <div class="pb-legend-item">
                         <span class="legend-color-dot" style="background: #f2c811;"></span>
                         <div class="legend-text">
-                          <div class="legend-top"><strong>Rural Livelihoods & FPOs</strong> <span>₹26 Cr (26%)</span></div>
-                          <div class="pb-progress-bar"><div class="pb-progress-fill" style="width: 26%; background: #f2c811;"></div></div>
+                          <div class="legend-top"><strong>Rural Livelihoods & FPOs</strong> <span>₹26 Cr (26%)</span>
+                          </div>
+                          <div class="pb-progress-bar">
+                            <div class="pb-progress-fill" style="width: 26%; background: #f2c811;"></div>
+                          </div>
                         </div>
                       </div>
                       <div class="pb-legend-item">
                         <span class="legend-color-dot" style="background: #0c2340;"></span>
                         <div class="legend-text">
                           <div class="legend-top"><strong>WASH & Drinking Water</strong> <span>₹18 Cr (18%)</span></div>
-                          <div class="pb-progress-bar"><div class="pb-progress-fill" style="width: 18%; background: #0c2340;"></div></div>
+                          <div class="pb-progress-bar">
+                            <div class="pb-progress-fill" style="width: 18%; background: #0c2340;"></div>
+                          </div>
                         </div>
                       </div>
                       <div class="pb-legend-item">
                         <span class="legend-color-dot" style="background: #851433;"></span>
                         <div class="legend-text">
-                          <div class="legend-top"><strong>Child Protection (1098) & Schools</strong> <span>₹10 Cr (10%)</span></div>
-                          <div class="pb-progress-bar"><div class="pb-progress-fill" style="width: 10%; background: #851433;"></div></div>
+                          <div class="legend-top"><strong>Child Protection (1098) & Schools</strong> <span>₹10 Cr
+                              (10%)</span></div>
+                          <div class="pb-progress-bar">
+                            <div class="pb-progress-fill" style="width: 10%; background: #851433;"></div>
+                          </div>
                         </div>
                       </div>
                       <div class="pb-legend-item">
                         <span class="legend-color-dot" style="background: #3b82f6;"></span>
                         <div class="legend-text">
-                          <div class="legend-top"><strong>Social Impact Assessments (SIA)</strong> <span>₹8 Cr (8%)</span></div>
-                          <div class="pb-progress-bar"><div class="pb-progress-fill" style="width: 8%; background: #3b82f6;"></div></div>
+                          <div class="legend-top"><strong>Social Impact Assessments (SIA)</strong> <span>₹8 Cr
+                              (8%)</span></div>
+                          <div class="pb-progress-bar">
+                            <div class="pb-progress-fill" style="width: 8%; background: #3b82f6;"></div>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -825,8 +879,10 @@
             <div class="pb-matrix-card" id="pbMatrixView">
               <div class="pb-chart-header">
                 <div class="pb-chart-title">
-                  <h4><i class="fa-solid fa-table-list"></i> Government Flagship Convergence & Institutional Advisory Scorecard</h4>
-                  <span>Multi-Stakeholder Departmental Alignment, FPO Strategic Mentorship & Volunteering Track Record</span>
+                  <h4><i class="fa-solid fa-table-list"></i> Government Flagship Convergence & Institutional Advisory
+                    Scorecard</h4>
+                  <span>Multi-Stakeholder Departmental Alignment, FPO Strategic Mentorship & Volunteering Track
+                    Record</span>
                 </div>
                 <span class="pb-chart-badge">Matrix Grid</span>
               </div>
@@ -844,63 +900,81 @@
                   <tbody>
                     <tr>
                       <td>
-                        <strong><i class="fa-solid fa-seedling text-gold"></i> Renowned Farmer Producer Organisation (FPO)</strong>
+                        <strong><i class="fa-solid fa-seedling text-gold"></i> Renowned Farmer Producer Organisation
+                          (FPO)</strong>
                         <div class="sub-label">Strategic Board Advisory & Value Chain Development</div>
                       </td>
                       <td>Ministry of Agriculture & Farmers Welfare / SFAC Alignment</td>
-                      <td>Post-harvest aggregation, market linkage facilitation, governance SOPs, and working capital mobilization.</td>
+                      <td>Post-harvest aggregation, market linkage facilitation, governance SOPs, and working capital
+                        mobilization.</td>
                       <td>West Bengal & Eastern India</td>
-                      <td><span class="pb-status-pill pb-status-active"><i class="fa-solid fa-check"></i> Active Board Advisor</span></td>
+                      <td><span class="pb-status-pill pb-status-active"><i class="fa-solid fa-check"></i> Active Board
+                          Advisor</span></td>
                     </tr>
                     <tr>
                       <td>
-                        <strong><i class="fa-solid fa-hand-holding-heart text-teal"></i> Institutional Volunteering in 5 Development Orgs</strong>
+                        <strong><i class="fa-solid fa-hand-holding-heart text-teal"></i> Institutional Volunteering in 5
+                          Development Orgs</strong>
                         <div class="sub-label">Health, Child Welfare, Women Enterprise & Youth Skilling</div>
                       </td>
                       <td>Registered Trusts, Societies & Non-Profit Coalitions</td>
-                      <td>Honorary strategic advisory, proposal peer-review, M&E frameworks, and grassroots capacity building.</td>
+                      <td>Honorary strategic advisory, proposal peer-review, M&E frameworks, and grassroots capacity
+                        building.</td>
                       <td>Multi-State (PAN-India)</td>
-                      <td><span class="pb-status-pill pb-status-active"><i class="fa-solid fa-check"></i> 5 Active Advisory Roles</span></td>
+                      <td><span class="pb-status-pill pb-status-active"><i class="fa-solid fa-check"></i> 5 Active
+                          Advisory Roles</span></td>
                     </tr>
                     <tr>
                       <td>
-                        <strong><i class="fa-solid fa-water text-navy"></i> World Bank Accelerated Minor Irrigation (ADMIP)</strong>
+                        <strong><i class="fa-solid fa-water text-navy"></i> World Bank Accelerated Minor Irrigation
+                          (ADMIP)</strong>
                         <div class="sub-label">Community Irrigation & Water User Associations</div>
                       </td>
                       <td>Water Resources Investigation & Development Dept (Govt of WB)</td>
-                      <td>Community mobilisation, WUA formation, minor irrigation oversight, and smallholder farmer livelihood convergence.</td>
+                      <td>Community mobilisation, WUA formation, minor irrigation oversight, and smallholder farmer
+                        livelihood convergence.</td>
                       <td>West Bengal (4 Districts)</td>
-                      <td><span class="pb-status-pill pb-status-verified"><i class="fa-solid fa-check-circle"></i> Successfully Completed</span></td>
+                      <td><span class="pb-status-pill pb-status-verified"><i class="fa-solid fa-check-circle"></i>
+                          Successfully Completed</span></td>
                     </tr>
                     <tr>
                       <td>
-                        <strong><i class="fa-solid fa-truck-medical text-teal"></i> National Health Mission (NHM) Mobile Medical Fleets</strong>
+                        <strong><i class="fa-solid fa-truck-medical text-teal"></i> National Health Mission (NHM) Mobile
+                          Medical Fleets</strong>
                         <div class="sub-label">10+ MMU Fleets Delivering 1.2M+ Primary Consultations</div>
                       </td>
                       <td>Ministry of Health & Family Welfare (MoHFW) / State Health Societies</td>
-                      <td>Fleet operational routing, doctor/paramedic management, NCD screening clinics, and district hospital referral linkage.</td>
+                      <td>Fleet operational routing, doctor/paramedic management, NCD screening clinics, and district
+                        hospital referral linkage.</td>
                       <td>WB, Jharkhand, Bihar</td>
-                      <td><span class="pb-status-pill pb-status-verified"><i class="fa-solid fa-check-circle"></i> 1.2M+ Lives Reached</span></td>
+                      <td><span class="pb-status-pill pb-status-verified"><i class="fa-solid fa-check-circle"></i> 1.2M+
+                          Lives Reached</span></td>
                     </tr>
                     <tr>
                       <td>
-                        <strong><i class="fa-solid fa-sink text-navy"></i> Swachh Bharat Mission (G) & Jal Jeevan Mission Alignment</strong>
+                        <strong><i class="fa-solid fa-sink text-navy"></i> Swachh Bharat Mission (G) & Jal Jeevan
+                          Mission Alignment</strong>
                         <div class="sub-label">Rural Sanitation & 40+ Village Water RO Plants</div>
                       </td>
                       <td>Dept of Drinking Water & Sanitation (Ministry of Jal Shakti)</td>
-                      <td>Oversight of 150,000+ twin-pit latrines, 40+ water purification RO kiosks, and panchayat ODF-Plus IEC campaigns.</td>
+                      <td>Oversight of 150,000+ twin-pit latrines, 40+ water purification RO kiosks, and panchayat
+                        ODF-Plus IEC campaigns.</td>
                       <td>WB, Bihar, Odisha</td>
-                      <td><span class="pb-status-pill pb-status-verified"><i class="fa-solid fa-check-circle"></i> 1.5L+ Assets Verified</span></td>
+                      <td><span class="pb-status-pill pb-status-verified"><i class="fa-solid fa-check-circle"></i> 1.5L+
+                          Assets Verified</span></td>
                     </tr>
                     <tr>
                       <td>
-                        <strong><i class="fa-solid fa-children text-crimson"></i> CHILDLINE 1098 & Child Welfare Committee (CWC) 24/7</strong>
+                        <strong><i class="fa-solid fa-children text-crimson"></i> CHILDLINE 1098 & Child Welfare
+                          Committee (CWC) 24/7</strong>
                         <div class="sub-label">Emergency Rescue, Restoration & POCSO Safety</div>
                       </td>
                       <td>Ministry of Women and Child Development (WCD)</td>
-                      <td>District project direction, 24/7 emergency response, CWC statutory restoration, child rights training, and model school CSR.</td>
+                      <td>District project direction, 24/7 emergency response, CWC statutory restoration, child rights
+                        training, and model school CSR.</td>
                       <td>West Bengal</td>
-                      <td><span class="pb-status-pill pb-status-verified"><i class="fa-solid fa-check-circle"></i> 100% CWC Restoration</span></td>
+                      <td><span class="pb-status-pill pb-status-verified"><i class="fa-solid fa-check-circle"></i> 100%
+                          CWC Restoration</span></td>
                     </tr>
                   </tbody>
                 </table>
@@ -911,12 +985,14 @@
           <!-- Power BI Canvas Footer -->
           <div class="powerbi-canvas-footer">
             <div class="pb-footer-left">
-              <span><i class="fa-solid fa-shield-halved"></i> Statutory Audit Compliance: MCA Section 135 & Schedule VII Aligned</span>
+              <span><i class="fa-solid fa-shield-halved"></i> Statutory Audit Compliance: MCA Section 135 & Schedule VII
+                Aligned</span>
               <span><i class="fa-solid fa-location-dot"></i> Geographical Coverage: 11 Indian States</span>
             </div>
             <div class="pb-footer-right">
               <span>Visualisation Mode: Power BI Embedded Interactive Engine</span>
-              <a href="#funding" class="pb-footer-action-link"><i class="fa-solid fa-handshake"></i> Submit Institutional Partnership Enquiry</a>
+              <a href="#funding" class="pb-footer-action-link"><i class="fa-solid fa-handshake"></i> Submit
+                Institutional Partnership Enquiry</a>
             </div>
           </div>
         </div>
@@ -941,7 +1017,8 @@
       <div class="about-lead-profile-card">
         <div class="lead-profile-media">
           <div class="lead-avatar-frame">
-            <img src="assets/prasenjit_singha_profile.jpg" alt="Prasenjit Singha - Senior CSR & Development Leader" class="lead-avatar-img">
+            <img src="assets/prasenjit_singha_profile.jpg" alt="Prasenjit Singha - Senior CSR & Development Leader"
+              class="lead-avatar-img">
             <div class="lead-verified-badge" title="Verified CSR & Social Impact Leader">
               <i class="fa-solid fa-circle-check"></i>
             </div>
@@ -954,13 +1031,16 @@
           </div>
           <h3 class="lead-profile-name">Prasenjit Singha</h3>
           <p class="lead-profile-tagline">
-            Strategic CSR Leadership | Institutional Partnerships | Public Health & MMU Specialist | Social Impact Assessment
+            Strategic CSR Leadership | Institutional Partnerships | Public Health & MMU Specialist | Social Impact
+            Assessment
           </p>
           <div class="lead-profile-meta-tags">
             <span><i class="fa-solid fa-location-dot"></i> Kolkata, West Bengal · 11 States Reach</span>
             <span><i class="fa-solid fa-award"></i> MSW (1st Class) · MBA Healthcare (Ongoing)</span>
             <span><i class="fa-solid fa-briefcase"></i> 15+ Years Track Record</span>
-            <span><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/prasenjit-singha-864a6354" target="_blank" rel="noopener" style="color: inherit; text-decoration: none;">Verified LinkedIn Network</a></span>
+            <span><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/prasenjit-singha-864a6354"
+                target="_blank" rel="noopener" style="color: inherit; text-decoration: none;">Verified LinkedIn
+                Network</a></span>
           </div>
         </div>
       </div>
@@ -1174,15 +1254,23 @@
               <div class="timeline-header">
                 <div>
                   <div class="timeline-role">District Coordinator & Lead Counsellor – HIV/AIDS & PLHIV Welfare</div>
-                  <div class="timeline-org">HIV/AIDS District Level Network Platform (Supported by West Bengal State AIDS Control and Prevention Society – WBSAPCS)</div>
+                  <div class="timeline-org">HIV/AIDS District Level Network Platform (Supported by West Bengal State
+                    AIDS Control and Prevention Society – WBSAPCS)</div>
                 </div>
                 <span class="timeline-period">2009 – 2010</span>
               </div>
               <ul class="timeline-bullets">
-                <li>Spearheaded district-level network platform defending fundamental human rights, constitutional dignity, and social protection for People Living with HIV (PLHIV).</li>
-                <li>Formulated and directed sustainable livelihood enhancement programmes, vocational skill development, and financial inclusion linkages to empower PLHIV beneficiaries towards socio-economic self-reliance.</li>
-                <li>Delivered 800+ specialized psychosocial counselling sessions for infected individuals and affected family members, driving Anti-Retroviral Therapy (ART) adherence, crisis support, and stigma elimination.</li>
-                <li>Fostered institutional convergence between Integrated Counselling and Testing Centres (ICTC), ART centres, district healthcare authorities, and corporate donors for supplemental nutritional and healthcare support.</li>
+                <li>Spearheaded district-level network platform defending fundamental human rights, constitutional
+                  dignity, and social protection for People Living with HIV (PLHIV).</li>
+                <li>Formulated and directed sustainable livelihood enhancement programmes, vocational skill development,
+                  and financial inclusion linkages to empower PLHIV beneficiaries towards socio-economic self-reliance.
+                </li>
+                <li>Delivered 800+ specialized psychosocial counselling sessions for infected individuals and affected
+                  family members, driving Anti-Retroviral Therapy (ART) adherence, crisis support, and stigma
+                  elimination.</li>
+                <li>Fostered institutional convergence between Integrated Counselling and Testing Centres (ICTC), ART
+                  centres, district healthcare authorities, and corporate donors for supplemental nutritional and
+                  healthcare support.</li>
               </ul>
             </div>
           </div>
@@ -1223,9 +1311,12 @@
           </p>
           <ul class="domain-highlights-list">
             <li><i class="fa-solid fa-check"></i> Maternal & Child Health (MCH) and Reproductive Health (RCH)</li>
-            <li><i class="fa-solid fa-check"></i> Mobile Medical Unit (MMU) fleet operations (10+ units, 1.2M+ consultations)</li>
-            <li><i class="fa-solid fa-check"></i> HIV/AIDS District Network Coordination & PLHIV Rights Advocacy (WBSAPCS)</li>
-            <li><i class="fa-solid fa-check"></i> Psychosocial Counselling & Livelihood Enhancement for Infected/Affected PLHIVs</li>
+            <li><i class="fa-solid fa-check"></i> Mobile Medical Unit (MMU) fleet operations (10+ units, 1.2M+
+              consultations)</li>
+            <li><i class="fa-solid fa-check"></i> HIV/AIDS District Network Coordination & PLHIV Rights Advocacy
+              (WBSAPCS)</li>
+            <li><i class="fa-solid fa-check"></i> Psychosocial Counselling & Livelihood Enhancement for
+              Infected/Affected PLHIVs</li>
             <li><i class="fa-solid fa-check"></i> Non-Communicable Diseases (NCDs) screening and geriatric clinics</li>
             <li><i class="fa-solid fa-check"></i> Adolescent Reproductive and Sexual Health (ARSH) counseling</li>
             <li><i class="fa-solid fa-check"></i> Frontline health volunteer (Swasthya Sahayika) capacity building</li>
@@ -2200,7 +2291,8 @@
             People Living with HIV (PLHIV) and affected families with WBSAPCS support.
           </p>
           <div class="project-card-footer">
-            <span style="font-size: 0.75rem; font-weight: 700; color: var(--teal-accent);">800+ Beneficiaries Counselled</span>
+            <span style="font-size: 0.75rem; font-weight: 700; color: var(--teal-accent);">800+ Beneficiaries
+              Counselled</span>
             <button class="btn btn-outline btn-sm view-project-modal-btn" data-project-id="p11">
               Case Study <i class="fa-solid fa-arrow-right"></i>
             </button>
@@ -2626,7 +2718,8 @@
             </div>
             <div>
               <h4>Official Email</h4>
-              <p><a href="mailto:prasenjit.singhaniya@gmail.com">prasenjit.singhaniya@gmail.com</a><br><small class="text-muted">Direct personal
+              <p><a href="mailto:prasenjit.singhaniya@gmail.com">prasenjit.singhaniya@gmail.com</a><br><small
+                  class="text-muted">Direct personal
                   response within 24 hours</small></p>
             </div>
           </div>
@@ -2907,7 +3000,8 @@
             style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-light); padding-bottom: 1rem; margin-bottom: 1.5rem; flex-wrap: wrap; gap: 1rem;">
             <div>
               <h3 style="color: var(--primary-navy); margin: 0;">Enquiry Management & Pipeline Control</h3>
-              <p style="color: var(--text-muted); font-size: 0.8rem; margin: 0;">Logged in as: prasenjit.singhaniya@gmail.com (Role:
+              <p style="color: var(--text-muted); font-size: 0.8rem; margin: 0;">Logged in as:
+                prasenjit.singhaniya@gmail.com (Role:
                 Administrator)</p>
             </div>
             <div style="display: flex; gap: 0.5rem;">

@@ -182,7 +182,7 @@ const PROFILE_DATA = {
   },
 
   keyMetrics: [
-    { value: "15+", label: "Years Sector Leadership", desc: "15+ years driving high-impact development initiatives" },
+    { value: "16+", label: "Years Sector Leadership", desc: "16+ years driving high-impact development initiatives" },
     { value: "11", label: "Indian States Covered", desc: "Proven operational reach across diverse socio-cultural terrains" },
     { value: "18+", label: "Corporate & BFSI Partners", desc: "Bandhan Bank, HDFC Life, Yes Bank, Kotak, World Bank, etc." },
     { value: "1.2M+", label: "Rural Lives Impacted", desc: "Direct healthcare, nutrition, sanitation and livelihoods outreach" },

@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Executive Guide: 100% Free Hosting & Deployment Strategy</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 18mm 16mm 18mm 16mm;
+      @bottom-right {
+        content: counter(page);
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      color: #1e293b;
+      background: #ffffff;
+      line-height: 1.55;
+      font-size: 9.5pt;
+    }
+
+    /* Cover / Header Banner */
+    .header-banner {
+      border-bottom: 3px solid #851433;
+      padding-bottom: 14px;
+      margin-bottom: 22px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+
+    .brand-title {
+      font-size: 19pt;
+      font-weight: 800;
+      color: #0c2340;
+      letter-spacing: -0.02em;
+      line-height: 1.15;
+    }
+
+    .brand-subtitle {
+      font-size: 10pt;
+      font-weight: 600;
+      color: #851433;
+      margin-top: 4px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .doc-meta {
+      text-align: right;
+      font-size: 8pt;
+      color: #64748b;
+      line-height: 1.35;
+    }
+
+    .doc-badge {
+      display: inline-block;
+      background: #0c2340;
+      color: #ffffff;
+      font-size: 7.5pt;
+      font-weight: 700;
+      padding: 2px 7px;
+      border-radius: 3px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 4px;
+    }
+
+    /* Typography */
+    h1 {
+      font-size: 14pt;
+      font-weight: 800;
+      color: #0c2340;
+      margin: 16px 0 8px;
+      border-left: 4px solid #851433;
+      padding-left: 8px;
+      line-height: 1.25;
+    }
+
+    h2 {
+      font-size: 11pt;
+      font-weight: 700;
+      color: #0c2340;
+      margin: 13px 0 6px;
+      line-height: 1.25;
+    }
+
+    h3 {
+      font-size: 9.5pt;
+      font-weight: 700;
+      color: #1e293b;
+      margin: 8px 0 4px;
+    }
+
+    p {
+      margin-bottom: 8px;
+      color: #334155;
+    }
+
+    ul, ol {
+      margin-left: 18px;
+      margin-bottom: 10px;
+    }
+
+    li {
+      margin-bottom: 3.5px;
+      color: #334155;
+    }
+
+    strong {
+      color: #0c2340;
+    }
+
+    code {
+      font-family: Consolas, 'Courier New', monospace;
+      font-size: 8.5pt;
+      background: #f1f5f9;
+      padding: 1px 4px;
+      border-radius: 3px;
+      color: #0c2340;
+      border: 1px solid #e2e8f0;
+    }
+
+    pre {
+      background: #0c2340;
+      color: #f8fafc;
+      padding: 8px 12px;
+      border-radius: 5px;
+      font-family: Consolas, 'Courier New', monospace;
+      font-size: 8pt;
+      margin-bottom: 10px;
+      overflow-x: auto;
+      line-height: 1.4;
+    }
+
+    /* Cards & Containers */
+    .card {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 6px;
+      padding: 10px 14px;
+      margin-bottom: 12px;
+      page-break-inside: avoid;
+    }
+
+    .card-accent {
+      border-left: 4px solid #0d9488;
+      background: #f0fdfa;
+    }
+
+    .card-warning {
+      border-left: 4px solid #f59e0b;
+      background: #fffbeb;
+    }
+
+    .card-primary {
+      border-left: 4px solid #851433;
+      background: #fdf2f4;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-bottom: 12px;
+      page-break-inside: avoid;
+    }
+
+    /* Tables */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 12px 0 16px;
+      font-size: 8.2pt;
+      page-break-inside: avoid;
+    }
+
+    th {
+      background: #0c2340;
+      color: #ffffff;
+      font-weight: 700;
+      padding: 7px 9px;
+      text-align: left;
+      border: 1px solid #0c2340;
+      letter-spacing: 0.3px;
+    }
+
+    td {
+      padding: 6px 9px;
+      border: 1px solid #e2e8f0;
+      vertical-align: top;
+      color: #334155;
+    }
+
+    tr:nth-child(even) td {
+      background: #f8fafc;
+    }
+
+    .badge-pass {
+      display: inline-block;
+      background: #dcfce7;
+      color: #15803d;
+      font-weight: 700;
+      font-size: 7pt;
+      padding: 2px 6px;
+      border-radius: 3px;
+      text-transform: uppercase;
+    }
+
+    .badge-warn {
+      display: inline-block;
+      background: #fef3c7;
+      color: #b45309;
+      font-weight: 700;
+      font-size: 7pt;
+      padding: 2px 6px;
+      border-radius: 3px;
+      text-transform: uppercase;
+    }
+
+    .page-break {
+      page-break-after: always;
+    }
+
+    /* Steps Box */
+    .step-box {
+      border: 1px solid #e2e8f0;
+      border-radius: 6px;
+      padding: 9px 12px;
+      margin-bottom: 8px;
+      background: #ffffff;
+      page-break-inside: avoid;
+    }
+
+    .step-number {
+      font-size: 8pt;
+      font-weight: 800;
+      color: #851433;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 2px;
+    }
+
+    .step-title {
+      font-size: 9pt;
+      font-weight: 700;
+      color: #0c2340;
+      margin-bottom: 3px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==================== HEADER ==================== -->
+  <div class="header-banner">
+    <div>
+      <div class="brand-title">PRASENJIT SINGHA</div>
+      <div class="brand-subtitle">Executive Free Hosting & Deployment Blueprint</div>
+      <div style="font-size: 8.5pt; color: #475569; margin-top: 3px;">
+        Senior CSR Leader &middot; Social Impact Consultant &middot; 15+ Years Footprint Across 11 States
+      </div>
+    </div>
+    <div class="doc-meta">
+      <span class="doc-badge">100% Free Tier Strategy</span><br>
+      <strong>Version:</strong> 2.0 (Production Architecture)<br>
+      <strong>Date:</strong> November 2026<br>
+      <strong>Scope:</strong> Zero-Cost Public Hosting Analysis
+    </div>
+  </div>
+
+  <!-- ==================== SECTION 1 ==================== -->
+  <h1>1. Executive Summary & Critical Clarification</h1>
+
+  <div class="card card-accent">
+    <strong>Key Takeaway & Guarantee:</strong> You do <u>NOT</u> need to spend any money, purchase a domain, or pay monthly hosting fees to make your website publicly accessible worldwide. Furthermore, you do <u>NOT</u> need to keep your own computer or laptop running as a server. Your website will be hosted 24/7 on global cloud data centers with 99.99% uptime and zero maintenance.
+  </div>
+
+  <h2>1.1 Addressing the "Own Machine as Server" Question</h2>
+  <p>
+    A common misconception is that hosting a website requires transforming your personal home or office laptop into a running server. <strong>This is completely unnecessary and discouraged for professional websites.</strong>
+  </p>
+  <ul>
+    <li><strong>Cloud Edge Hosting:</strong> When you deploy to platforms like Netlify, Vercel, or GitHub Pages, your complete website files are copied directly to high-speed cloud edge servers managed by enterprise providers (AWS CloudFront, Cloudflare, Fastly).</li>
+    <li><strong>Independent 24/7/365 Availability:</strong> Once uploaded, the website runs autonomously in the cloud. You can turn off your laptop, disconnect from Wi-Fi, or travel—anyone globally on any device (Mac, Windows, iPhone, Android) can type your URL and view the website instantly in sub-second load times.</li>
+    <li><strong>Zero Electricity, Hardware Wear, or Network Security Risks:</strong> Your personal IP address is never exposed, and your computer uses zero power.</li>
+  </ul>
+
+  <h2>1.2 The Two Primary Free Deployment Approaches</h2>
+  <p>
+    This report evaluates two viable methods for hosting Prasenjit Singha's website completely free of cost:
+  </p>
+  <div class="grid-2">
+    <div class="card card-primary">
+      <h3>Approach 1: Hosting WITHOUT GitHub</h3>
+      <p style="font-size: 8.5pt;">
+        Direct deployment via web browser drag-and-drop (Netlify Drop) or CLI tools (Surge.sh, Vercel CLI).
+      </p>
+      <span class="badge-pass">Simplest & Fastest (Under 2 Min)</span>
+    </div>
+    <div class="card card-accent">
+      <h3>Approach 2: Hosting THROUGH GitHub</h3>
+      <p style="font-size: 8.5pt;">
+        Uploading code to a GitHub repository and linking it to GitHub Pages or cloud CI/CD pipelines (Vercel / Netlify).
+      </p>
+      <span class="badge-pass">Best Long-Term Version Control</span>
+    </div>
+  </div>
+
+  <!-- ==================== SECTION 2 ==================== -->
+  <h1>2. Technical Architecture of Your Website</h1>
+  <p>
+    Before choosing a hosting strategy, it is essential to understand what components make up your website and how they run in the cloud:
+  </p>
+
+  <div class="card">
+    <table style="margin: 0;">
+      <thead>
+        <tr>
+          <th style="width: 25%;">Layer</th>
+          <th style="width: 35%;">Website Component</th>
+          <th style="width: 40%;">How It Runs in Free Hosting</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Frontend UI</strong></td>
+          <td><code>index.html</code>, <code>css/style.css</code></td>
+          <td>Runs 100% on free CDN edge servers worldwide with instant caching.</td>
+        </tr>
+        <tr>
+          <td><strong>Interactive Logic</strong></td>
+          <td><code>js/app.js</code>, <code>data/profileData.js</code></td>
+          <td>Executes in the visitor's browser (Power BI slicers, modals, search, charts).</td>
+        </tr>
+        <tr>
+          <td><strong>Media & Documents</strong></td>
+          <td>Official LinkedIn photo, <code>Prasenjit_Singha_CV.pdf</code></td>
+          <td>Stored on free cloud storage; fast download for corporate recruiters.</td>
+        </tr>
+        <tr>
+          <td><strong>Lead Forms (7 Forms)</strong></td>
+          <td>Funding, Recruiter, SIA, Technical, Contact, Ask Prasenjit</td>
+          <td>Handled via free serverless email delivery (Netlify Forms / Web3Forms) directly to <code>ps99123@gmail.com</code>.</td>
+        </tr>
+        <tr>
+          <td><strong>Database</strong></td>
+          <td><code>schema.sql</code> (PostgreSQL Audit Log)</td>
+          <td>Hosted 100% free on Supabase Cloud PostgreSQL (optional, no local server needed).</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="page-break"></div>
+
+  <!-- ==================== SECTION 3 ==================== -->
+  <h1>3. Approach 1: Hosting WITHOUT GitHub (Direct Cloud Deployment)</h1>
+  <p>
+    This approach bypasses Git and GitHub completely. You upload your website folder directly to a cloud hosting platform using your web browser or command line.
+  </p>
+
+  <h2>3.1 Recommended Platform: Netlify Drop (Easiest — Web Drag-and-Drop)</h2>
+  <p>
+    Netlify provides an instant browser-based deployment service called <strong>Netlify Drop</strong>. It requires zero command-line tools, zero Git knowledge, and zero build configuration.
+  </p>
+
+  <div class="step-box">
+    <div class="step-number">Step 1 &middot; Free Account Registration</div>
+    <div class="step-title">Create a Free Netlify Account</div>
+    <p>Visit <code>https://app.netlify.com/signup</code> and create a free account using your email address (Gmail, etc.). No credit card is required.</p>
+  </div>
+
+  <div class="step-box">
+    <div class="step-number">Step 2 &middot; Uploading the Website Folder</div>
+    <div class="step-title">Drag & Drop Your Project Folder</div>
+    <p>Navigate to <code>https://app.netlify.com/drop</code>. Open Windows File Explorer, click and drag the entire <code>bio details</code> folder directly into the dashed upload box in your browser.</p>
+  </div>
+
+  <div class="step-box">
+    <div class="step-number">Step 3 &middot; Instant Cloud Build</div>
+    <div class="step-title">Automatic Deployment & Global CDN Distribution</div>
+    <p>Within 10–15 seconds, Netlify uploads all files, generates a free SSL certificate, and assigns a temporary URL.</p>
+  </div>
+
+  <div class="step-box">
+    <div class="step-number">Step 4 &middot; Claiming a Free Subdomain</div>
+    <div class="step-title">Customize Your Permanent Public URL</div>
+    <p>In the Netlify dashboard, go to <strong>Site configuration</strong> &rarr; <strong>Change site name</strong>. Type <code>prasenjit-singha</code>. Your public URL is immediately active: <code>https://prasenjit-singha.netlify.app</code>.</p>
+  </div>
+
+  <h2>3.2 Alternative CLI Option: Surge.sh (Command Line Direct Upload)</h2>
+  <p>
+    Surge.sh is a lightweight static web publishing platform. It is already installed in your project workspace.
+  </p>
+  <pre>cd "C:\Users\AYAN\Desktop\bio details"
+npx surge --domain prasenjit-singha.surge.sh</pre>
+  <p>You provide a free email and password in the terminal, and the site is immediately live at <code>https://prasenjit-singha.surge.sh</code>.</p>
+
+  <h2>3.3 Handling Forms, Backend & Database Without GitHub</h2>
+  <ul>
+    <li><strong>Automatic Form Processing (Netlify Forms):</strong> By adding <code>data-netlify="true"</code> to your HTML forms, Netlify automatically intercepts form submissions and forwards email notifications to <code>ps99123@gmail.com</code>. You also get an online dashboard showing all submitted leads. <strong>100 submissions/month free.</strong></li>
+    <li><strong>Database (Optional):</strong> If you want to store leads in a real SQL database, create a free project at <code>https://supabase.com</code> and execute <code>schema.sql</code>. Supabase runs in the cloud 24/7 for free and connects via JavaScript.</li>
+  </ul>
+
+  <h2>3.4 Limitations of Approach 1</h2>
+  <ul>
+    <li><strong>Manual Re-upload for Updates:</strong> To update a sentence or photo, you must re-drag the folder into Netlify Drop or re-run the Surge command.</li>
+    <li><strong>No Automated Version History:</strong> You do not get a graphical timeline of past edits (like Git commit history).</li>
+  </ul>
+
+  <!-- ==================== SECTION 4 ==================== -->
+  <h1>4. Approach 2: Hosting THROUGH GitHub (Git-Powered Cloud Hosting)</h1>
+  <p>
+    In this approach, you store your website project in a free repository on <strong>GitHub</strong>. GitHub then either hosts the site directly via <strong>GitHub Pages</strong> or automatically triggers deployments to <strong>Vercel</strong> or <strong>Netlify</strong>.
+  </p>
+
+  <h2>4.1 Is GitHub Pages Sufficient for the Entire Website?</h2>
+  <div class="card card-warning">
+    <strong>Honest Clarification:</strong> GitHub Pages is 100% sufficient for your <u>entire frontend, UI, interactive Power BI analytics, and downloadable CV</u>. However, GitHub Pages does <u>not</u> execute server-side code (PHP/Python) or host SQL databases. To handle forms and database on GitHub Pages, we connect the forms to a free cloud endpoint (Web3Forms/Formspree) and host the database on Supabase Cloud.
+  </div>
+
+  <h2>4.2 Step-by-Step Instructions: Deploying via GitHub</h2>
+
+  <div class="step-box">
+    <div class="step-number">Step 1 &middot; Create GitHub Repository</div>
+    <div class="step-title">Initialize a Free Public Repository</div>
+    <p>Log in to <code>https://github.com</code> &rarr; Click <strong>New Repository</strong> &rarr; Name it <code>prasenjit-singha</code> &rarr; Set to <strong>Public</strong> &rarr; Click <strong>Create Repository</strong>.</p>
+  </div>
+
+  <div class="step-box">
+    <div class="step-number">Step 2 &middot; Upload Code to GitHub</div>
+    <div class="step-title">Push Files via Git or Web Upload</div>
+    <p>On your machine (using Git already installed in Windows):</p>
+    <pre>cd "C:\Users\AYAN\Desktop\bio details"
+git init
+git add .
+git commit -m "Deploy Prasenjit Singha Executive Platform"
+git branch -M main
+git remote add origin https://github.com/YOUR_USERNAME/prasenjit-singha.git
+git push -u origin main</pre>
+  </div>
+
+  <div class="step-box">
+    <div class="step-number">Step 3A &middot; Host Directly on GitHub Pages (Free)</div>
+    <div class="step-title">Activate GitHub Pages in 1 Click</div>
+    <p>In GitHub: Go to <strong>Settings</strong> &rarr; <strong>Pages</strong> &rarr; Under <strong>Branch</strong>, select <code>main</code> &rarr; Click <strong>Save</strong>. Your website is live at: <code>https://YOUR_USERNAME.github.io/prasenjit-singha/</code>.</p>
+  </div>
+
+  <div class="step-box">
+    <div class="step-number">Step 3B &middot; Host on Vercel via GitHub (Recommended for Better URLs)</div>
+    <div class="step-title">Connect GitHub to Vercel for a Clean Subdomain</div>
+    <p>Visit <code>https://vercel.com</code> &rarr; Sign up with GitHub &rarr; Click <strong>Import Project</strong> &rarr; Select <code>prasenjit-singha</code> &rarr; Click <strong>Deploy</strong>. Live at: <code>https://prasenjit-singha.vercel.app</code>.</p>
+  </div>
+
+  <div class="page-break"></div>
+
+  <!-- ==================== SECTION 5 ==================== -->
+  <h1>5. Comprehensive Head-to-Head Comparison Matrix</h1>
+
+  <table>
+    <thead>
+      <tr>
+        <th style="width: 22%;">Feature / Metric</th>
+        <th style="width: 39%;">Approach 1: Without GitHub (Netlify Drop / Surge)</th>
+        <th style="width: 39%;">Approach 2: Through GitHub (GitHub + Vercel / Netlify)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Setup Difficulty</strong></td>
+        <td><span class="badge-pass">Beginner (Easiest)</span> &middot; Drag-and-drop in browser; no coding.</td>
+        <td><span class="badge-warn">Moderate</span> &middot; Requires GitHub account & Git push.</td>
+      </tr>
+      <tr>
+        <td><strong>Setup Time</strong></td>
+        <td><strong>Under 2 Minutes</strong> to live public URL.</td>
+        <td><strong>5 to 10 Minutes</strong> total setup.</td>
+      </tr>
+      <tr>
+        <td><strong>Cost & Hidden Fees</strong></td>
+        <td><strong>₹0 (100% Free Forever)</strong>. No credit card required.</td>
+        <td><strong>₹0 (100% Free Forever)</strong>. No credit card required.</td>
+      </tr>
+      <tr>
+        <td><strong>Does Personal PC Need to Stay On?</strong></td>
+        <td><strong>NO.</strong> Cloud servers run 24/7/365. Personal PC can be powered off.</td>
+        <td><strong>NO.</strong> Cloud servers run 24/7/365. Personal PC can be powered off.</td>
+      </tr>
+      <tr>
+        <td><strong>Free Public URL Format</strong></td>
+        <td><code>https://prasenjit-singha.netlify.app</code> or <code>.surge.sh</code></td>
+        <td><code>https://prasenjit-singha.vercel.app</code> or <code>username.github.io</code></td>
+      </tr>
+      <tr>
+        <td><strong>Free SSL / HTTPS Security</strong></td>
+        <td><span class="badge-pass">Automatic</span> &middot; Let's Encrypt 256-bit SSL enabled by default.</td>
+        <td><span class="badge-pass">Automatic</span> &middot; Let's Encrypt 256-bit SSL enabled by default.</td>
+      </tr>
+      <tr>
+        <td><strong>Free Monthly Bandwidth</strong></td>
+        <td><strong>100 GB / month</strong> (Supports ≈ 60,000+ monthly page views).</td>
+        <td><strong>100 GB / month</strong> on Vercel, Netlify, or GitHub Pages.</td>
+      </tr>
+      <tr>
+        <td><strong>Server Sleep / Cold Starts</strong></td>
+        <td><span class="badge-pass">Zero Sleep</span> &middot; Global Edge CDN is permanently active.</td>
+        <td><span class="badge-pass">Zero Sleep</span> &middot; Global Edge CDN is permanently active.</td>
+      </tr>
+      <tr>
+        <td><strong>Form Submissions & Email Alerts</strong></td>
+        <td><span class="badge-pass">Built-in Netlify Forms</span> &middot; 100 free leads/mo emailed to <code>ps99123@gmail.com</code>.</td>
+        <td>Handled via free Web3Forms API or Netlify CI/CD integration.</td>
+      </tr>
+      <tr>
+        <td><strong>Database Capability</strong></td>
+        <td>Connects to free Cloud Supabase PostgreSQL via client API.</td>
+        <td>Connects to free Cloud Supabase PostgreSQL via client API.</td>
+      </tr>
+      <tr>
+        <td><strong>Backups & Version History</strong></td>
+        <td><span class="badge-warn">Basic</span> &middot; Must keep local folder backups manually.</td>
+        <td><span class="badge-pass">Enterprise</span> &middot; Full commit history, instant 1-click rollback.</td>
+      </tr>
+      <tr>
+        <td><strong>Future Update Workflow</strong></td>
+        <td>Re-drag the folder into Netlify Drop when editing.</td>
+        <td>Push code via Git; site auto-updates in 5 seconds.</td>
+      </tr>
+      <tr>
+        <td><strong>Custom Domain Upgrade Path</strong></td>
+        <td>Attach <code>prasenjitsingha.com</code> anytime for free.</td>
+        <td>Attach <code>prasenjitsingha.com</code> anytime for free.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- ==================== SECTION 6 ==================== -->
+  <h1>6. Security, Backups, and Maintenance Requirements</h1>
+
+  <div class="grid-2">
+    <div class="card">
+      <h3>Free Cloud Security Architecture</h3>
+      <ul>
+        <li><strong>Automatic HTTPS (SSL):</strong> All traffic is encrypted end-to-end; browsers show the verified security padlock <code>🔒</code>.</li>
+        <li><strong>DDoS & Bot Protection:</strong> Both Netlify and Vercel sit behind enterprise Cloudflare/AWS edge firewalls.</li>
+        <li><strong>Static File Immunity:</strong> Because the site is static HTML/CSS/JS, there are no PHP or WordPress vulnerabilities to exploit.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Backup & Maintenance Protocol</h3>
+      <ul>
+        <li><strong>Disaster Recovery:</strong> With GitHub, your entire codebase is permanently preserved in the cloud. If your laptop crashes, you lose zero work.</li>
+        <li><strong>Zero Server Patching:</strong> You never have to update Linux kernels, manage Apache/Nginx, or renew SSL certs. The cloud provider handles all maintenance.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ==================== SECTION 7 ==================== -->
+  <h1>7. Expert Recommendation & Action Plan</h1>
+
+  <div class="card card-accent" style="padding: 14px 16px;">
+    <h2 style="margin-top: 0; color: #0c2340; font-size: 11pt;">Final Recommendation: Two-Phase Deployment</h2>
+    <p>
+      For Prasenjit Singha's website, the ideal path is a <strong>Two-Phase Strategy</strong>:
+    </p>
+    <ol style="margin-bottom: 6px;">
+      <li>
+        <strong>Phase 1 (Immediate — Next 5 Minutes): Deploy via Netlify Drop (Approach 1)</strong><br>
+        This gets your website live on the internet immediately at <code>https://prasenjit-singha.netlify.app</code> with zero friction. You can immediately test the public URL, verify mobile responsiveness on your phone, and check the 7 forms.
+      </li>
+      <li>
+        <strong>Phase 2 (Long-Term Stability): Connect to GitHub (Approach 2)</strong><br>
+        Whenever you want safe cloud backups and version history, we push the folder to GitHub and link it to your existing Netlify account. That way, any future text or CV update is automatically deployed the moment you push to GitHub.
+      </li>
+    </ol>
+    <p style="margin-bottom: 0; font-size: 8.5pt; color: #047857;">
+      <strong>Total Financial Cost for Both Phases: ₹0.00 (Completely Free Forever).</strong>
+    </p>
+  </div>
+
+</body>
+</html>
+

@@ -1,0 +1,11 @@
+# Robots.txt for Prasenjit Singha Executive Platform
+# https://prasenjitsingha.in
+
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /api/private/
+
+# Sitemap location
+Sitemap: https://prasenjitsingha.in/sitemap.xml
+

@@ -14,7 +14,7 @@ const PROFILE_DATA = {
     subheadline: "CSR Leadership | Institutional Partnerships | Public Health | Social Impact Assessment | Development Programme Management.",
     brandStatement: "PRASENJIT SINGHA: Strategic CSR Leadership | Social Impact Consultancy | Development Partnerships — \"Bridging Funding, Strategy and Technical Expertise to Deliver Sustainable Social Impact.\"",
     brandPositioning: "Strategic CSR Leadership | Social Impact Consultancy | Development Partnerships | Public Health Expertise",
-    experienceYears: "15+",
+    experienceYears: "16+",
     statesCount: "11",
     statesList: ["West Bengal", "Bihar", "Jharkhand", "Odisha", "Assam", "Madhya Pradesh", "Uttar Pradesh", "Rajasthan", "Maharashtra", "Tripura", "Meghalaya"],
     previousOrg: "Bandhan-Konnagar",
@@ -24,7 +24,7 @@ const PROFILE_DATA = {
     phone: "+91 79807 41727",
     linkedin: "https://www.linkedin.com/in/prasenjit-singha-864a6354",
     cvDownloadPath: "assets/docs/Prasenjit_Singha_CV.pdf",
-    summary: "Senior development-sector executive and strategic CSR consultant with 15+ years of distinguished leadership across 11 Indian states. Extensive proven track record at Bandhan-Konnagar directing multi-crore CSR initiatives for premier BFSI and corporate donors (Bandhan Bank, HDFC Life, Yes Bank, Kotak Mahindra Bank, Bajaj Finserv, World Bank). Deep expertise spanning Public Health & Mobile Medical Units (1.2M+ consultations), Maternal & Child Health, CHILDLINE 1098 child protection, WASH infrastructure (1.5L+ assets), Farmer Producer Organisations, and Social Impact Assessments (SIA). Expert in institutional convergence, MCA Schedule VII compliance, Theory of Change, and assignment-specific research management."
+    summary: "Senior development-sector executive and strategic CSR consultant with 16+ years of distinguished leadership across 11 Indian states. Extensive proven track record at Bandhan-Konnagar directing multi-crore CSR initiatives for premier BFSI and corporate donors (Bandhan Bank, HDFC Life, Yes Bank, Kotak Mahindra Bank, Bajaj Finserv, World Bank). Deep expertise spanning Public Health & Mobile Medical Units (1.2M+ consultations), Maternal & Child Health, CHILDLINE 1098 child protection, WASH infrastructure (1.5L+ assets), Farmer Producer Organisations, and Social Impact Assessments (SIA). Expert in institutional convergence, MCA Schedule VII compliance, Theory of Change, and assignment-specific research management."
   },
 
   // Power BI Executive Analytics Dataset (Empirical Metrics)
@@ -914,7 +914,7 @@ Before drafting a single page of a CSR public health proposal, development profe
 
   // Academic Teaching Capabilities & University Syllabus
   academicTeaching: {
-    overview: "With a 1st Class Master of Social Work (MSW) and 15+ years of real-world multi-state programme management, Prasenjit Singha is available as a Visiting Faculty, Guest Lecturer, and Subject-Matter Specialist for Universities and Social Work Institutes.",
+    overview: "With a 1st Class Master of Social Work (MSW) and 16+ years of real-world multi-state programme management, Prasenjit Singha is available as a Visiting Faculty, Guest Lecturer, and Subject-Matter Specialist for Universities and Social Work Institutes.",
     subjects: [
       {
         code: "SW-601",

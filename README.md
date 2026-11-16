@@ -6,7 +6,7 @@
 ---
 
 ## Executive Overview
-* **Experience:** 15+ years of distinguished leadership across 11 Indian states.
+* **Experience:** 16+ years of distinguished leadership across 11 Indian states.
 * **Former Assistant Manager – Development Programmes:** Bandhan-Konnagar.
 * **Key Credentials:**
   * ₹100 Cr+ Cumulative CSR Budget Execution Oversight (MCA Section 135 & Schedule VII).

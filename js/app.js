@@ -95,6 +95,10 @@
         }
       });
 
+      if (currentSectionId === 'teaching') {
+        currentSectionId = 'career';
+      }
+
       navLinks.forEach(link => {
         link.classList.remove('active');
         if (link.getAttribute('href') === `#${currentSectionId}`) {

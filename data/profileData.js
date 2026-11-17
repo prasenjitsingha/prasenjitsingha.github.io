@@ -17,14 +17,15 @@ const PROFILE_DATA = {
     experienceYears: "16+",
     statesCount: "11",
     statesList: ["West Bengal", "Bihar", "Jharkhand", "Odisha", "Assam", "Madhya Pradesh", "Uttar Pradesh", "Rajasthan", "Maharashtra", "Tripura", "Meghalaya"],
-    previousOrg: "Bandhan-Konnagar",
-    currentTitle: "Senior CSR Leader & Social Development Consultant",
+    currentOrg: "Bandhan-Konnagar",
+    currentRole: "Assistant Manager – Development Programmes",
+    currentTitle: "Assistant Manager – Development Programmes & Strategic CSR Consultant",
     location: "Kolkata, West Bengal, India (PAN-India Availability)",
     email: "prasenjit.singhaniya@gmail.com",
     phone: "+91 79807 41727",
     linkedin: "https://www.linkedin.com/in/prasenjit-singha-864a6354",
     cvDownloadPath: "assets/docs/Prasenjit_Singha_CV.pdf",
-    summary: "Senior development-sector executive and strategic CSR consultant with 16+ years of distinguished leadership across 11 Indian states. Extensive proven track record at Bandhan-Konnagar directing multi-crore CSR initiatives for premier BFSI and corporate donors (Bandhan Bank, HDFC Life, Yes Bank, Kotak Mahindra Bank, Bajaj Finserv, World Bank). Deep expertise spanning Public Health & Mobile Medical Units (1.2M+ consultations), Maternal & Child Health, CHILDLINE 1098 child protection, WASH infrastructure (1.5L+ assets), Farmer Producer Organisations, and Social Impact Assessments (SIA). Expert in institutional convergence, MCA Schedule VII compliance, Theory of Change, and assignment-specific research management."
+    summary: "Senior development-sector executive and strategic CSR consultant with 16+ years of distinguished leadership across 11 Indian states. Currently serving as Assistant Manager – Development Programmes at Bandhan-Konnagar (2016–Present), directing multi-crore CSR initiatives for premier BFSI and corporate donors (Bandhan Bank, HDFC Life, Yes Bank, Kotak Mahindra Bank, Bajaj Finserv, World Bank). Deep expertise spanning Public Health & Mobile Medical Units (1.2M+ consultations), Maternal & Child Health, CHILDLINE 1098 child protection, WASH infrastructure (1.5L+ assets), Farmer Producer Organisations, and Social Impact Assessments (SIA). Expert in institutional convergence, MCA Schedule VII compliance, Theory of Change, and assignment-specific research management."
   },
 
   // Power BI Executive Analytics Dataset (Empirical Metrics)
@@ -860,17 +861,17 @@ Before drafting a single page of a CSR public health proposal, development profe
   // Verified Professional Career Timeline
   experienceJourney: [
     {
-      period: "2016 – 2026 (10 Years)",
+      period: "2016 – Present (Current)",
       role: "Assistant Manager – Development Programmes",
       organization: "Bandhan-Konnagar",
       location: "Kolkata, West Bengal (Multi-State Operations)",
-      badge: "Leadership Role",
+      badge: "Currently Serving",
       highlights: [
-        "Spearheaded multi-state development portfolios encompassing Public Health, WASH, and Ultra-Poor Graduation.",
-        "Managed relationships with 18+ corporate donors and BFSI leaders including Bandhan Bank, HDFC Life, Yes Bank, and Kotak Mahindra Bank.",
+        "Currently directing multi-state development portfolios encompassing Public Health, WASH, and Ultra-Poor Graduation.",
+        "Managing strategic partnerships with 18+ corporate donors and BFSI leaders including Bandhan Bank, HDFC Life, Yes Bank, and Kotak Mahindra Bank.",
         "Oversaw delivery of 1.5 Lakh+ WASH household assets and 40+ community water purification plants across eastern India.",
-        "Supervised fleet of Mobile Medical Units providing over 1.2 Million patient consultations in underserved rural habitations.",
-        "Led cross-functional teams of 150+ field programme officers, health supervisors, and technical documentation specialists."
+        "Supervising fleet of Mobile Medical Units providing over 1.2 Million patient consultations in underserved rural habitations.",
+        "Leading cross-functional teams of 150+ field programme officers, health supervisors, and technical documentation specialists."
       ]
     },
     {

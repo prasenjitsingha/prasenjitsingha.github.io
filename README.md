@@ -7,7 +7,7 @@
 
 ## Executive Overview
 * **Experience:** 16+ years of distinguished leadership across 11 Indian states.
-* **Former Assistant Manager – Development Programmes:** Bandhan-Konnagar.
+* **Current Position:** Assistant Manager – Development Programmes, Bandhan-Konnagar (2016–Present).
 * **Key Credentials:**
   * ₹100 Cr+ Cumulative CSR Budget Execution Oversight (MCA Section 135 & Schedule VII).
   * ₹20 Cr+ Direct Corporate Resource Mobilization.
